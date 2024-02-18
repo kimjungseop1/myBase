@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="52dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="52dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="center"
+        android:src="@drawable/action_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/logoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream9"
+        android:includeFontPadding="false"
+        android:text="펫링크"
+        android:textColor="@color/color_723CED"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/logoTxt_1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".35" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/logoTxt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream9"
+        android:includeFontPadding="false"
+        android:text="프렌즈"
+        android:textColor="@color/color_666666"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/logoTxt"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/logoTxt"
+        app:layout_constraintTop_toTopOf="@id/logoTxt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/destTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/scdream5"
+        android:gravity="center"
+        android:lineHeight="25dp"
+        android:text="검증된고 안전한 매장에서\n행복한 반려생활을 시작하세요."
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/logoTxt" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kakaoLoginBtn"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/bg_kakao_background"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/destTxt">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_kakao"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/scdream5"
+            android:gravity="center"
+            android:text="카카오로 시작하기"
+            android:textColor="@color/color_41231f"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/naverLoginBtn"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_naver_btn"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/kakaoLoginBtn">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_naver"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/scdream5"
+            android:gravity="center"
+            android:text="네이버로 시작하기"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_723CED">#723CED</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_41231f">#41231f</color>
+    <color name="color_FEE500">#FEE500</color>
+    <color name="color_42AC3A">#42AC3A</color>
+
+    <color name="color_222222">#222222</color>
+
+    <color name="color_shimmer_base">#F3F3F3</color>
+    <color name="color_shimmer_highlight">#E7E7E7</color>
+</resources>

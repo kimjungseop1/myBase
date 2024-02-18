@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/contentImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/contractBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_safe_insurance"
+        app:layout_constraintBottom_toBottomOf="@id/contentImg"
+        app:layout_constraintEnd_toEndOf="@id/contentImg"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintStart_toStartOf="@id/contentImg"
+        app:layout_constraintTop_toTopOf="@id/contentImg"
+        app:layout_constraintVertical_bias=".1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contractType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/scdream4"
+        android:text="개인분양"
+        android:textColor="@color/color_666666"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contentImg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/breedTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/scdream6"
+        android:maxLines="1"
+        android:text="품종품종"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contractType" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/genderBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/icon_female"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/scdream4"
+        android:text="여아"
+        android:textColor="@color/color_222222"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/breedTxt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/birthBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:drawableStart="@drawable/icon_birth"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/scdream4"
+        android:text="1개월"
+        android:textColor="@color/color_222222"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/genderBadge"
+        app:layout_constraintStart_toEndOf="@id/genderBadge"
+        app:layout_constraintTop_toTopOf="@id/genderBadge" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
